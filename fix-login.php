@@ -46,8 +46,9 @@
                                 if($_GET['act']=='loginerror'){
                                     echo'
                                     <div class="alert alert-danger" role="alert">
-                                        Login error!
+                                        Login error! 
                                     </div>';
+                                    echo'<p align="left"><a href="fix-login.php"> [ Kembali ] </a></p>';
                                 }else{
 
                                 ?>
@@ -75,7 +76,7 @@
 
                                 <div class="form-group mt-2 mb-0 row">
                                     <div class="col-12 mt-3">
-                                        <a href="pages-recoverpw-2.html"><i class="mdi mdi-lock"></i> Lupa Kata Sandi?</a>
+                                        <a href="fix-recoverpw.php"><i class="mdi mdi-lock"></i> Lupa Kata Sandi?</a>
                                     </div>
                                 </div>
 
@@ -84,7 +85,7 @@
                             <?php } ?>
 
                             <div class="mt-5 pt-4 text-center">
-                                <p>Belum punya akun ? <a href="pages-register-2.html" class="font-weight-medium text-primary"> Klik Disini Untuk Daftar</a> </p>
+                                <p>Belum punya akun ? <a href="fix-register.php" class="font-weight-medium text-primary"> Klik Disini Untuk Daftar</a> </p>
                             </div>
 
                         </div>

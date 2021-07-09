@@ -89,7 +89,7 @@
                             ?>
 
                             <div class="text-center">
-                                <p>Sudah mempunyai akun ? <a href="fix-login.html" class="font-weight-medium text-primary"> Klik Untuk Masuk </a> </p>
+                                <p>Sudah mempunyai akun ? <a href="fix-login.php" class="font-weight-medium text-primary"> Klik Untuk Masuk </a> </p>
                             </div>
 
                         </div>
