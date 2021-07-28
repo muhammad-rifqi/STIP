@@ -164,3 +164,39 @@
         </div>
     </div>
 </header>
+
+<div class="topnav" style="background-color: #29b6f6 !important;">
+    <div class="container-fluid">
+        <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+            <div class="collapse navbar-collapse" id="topnav-menu-content">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('user/dashboard')?>" style="color: #ffffff !important;">
+                            <i class="ti-home mr-2"></i><b>Beranda</b>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('user/ruangkelas')?>" style="color: #ffffff !important;">
+                            <i class="ti-write mr-2"></i>Ruang Kelas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('user/obrolan')?>" style="color: #ffffff !important;">
+                            <i class="ti-email mr-2"></i>Obrolan
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('user/jelajah')?>" style="color: #ffffff !important;">
+                            <i class="ti-world mr-2"></i>Jelajah
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
