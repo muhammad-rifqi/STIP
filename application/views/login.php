@@ -36,10 +36,11 @@
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
-                                    <h3 class="alert-heading font-size-h4 font-w400">Success</h3>
+                                    <h3 class="alert-heading font-size-h4 font-w400">Failed</h3>
                                     <p class="mb-0"><?= $this->session->flashdata('msg') ?> </p>
                                 </div>
                             <?php } ?>
+
                             
                         <div class="card-box shadow-none p-4">
                             <div class="p-2">

@@ -31,6 +31,27 @@
 
                     <div class="account-box">
 
+                    <?php if ($this->session->flashdata('success')) { ?>
+                                <div class="alert alert-success alert-dismissable" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                    <h3 class="alert-heading font-size-h4 font-w400">Success</h3>
+                                    <p class="mb-0"><?= $this->session->flashdata('success') ?> </p>
+                                </div>
+                            <?php } ?>
+
+                            <?php if ($this->session->flashdata('failed')) { ?>
+                                <div class="alert alert-danger alert-dismissable" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                    <h3 class="alert-heading font-size-h4 font-w400">Failed</h3>
+                                    <p class="mb-0"><?= $this->session->flashdata('failed') ?> </p>
+                                </div>
+                            <?php } ?>
+
+                            
                         <div class="card-box shadow-none p-4">
                             <div class="p-2">
                                 <div class="text-center">
@@ -40,27 +61,27 @@
                                 <h4 class="font-size-18 text-center">LEARNING MANAGEMENT SYSTEM</h4>
                                 <p class="text-muted text-center">Daftar sekarang</p>
 
-                              <form class="mt-4" action="#">
+                              <form class="mt-4" action="<?= base_url('welcome/proses_register')?>" method="POST">
 
                                 <div class="form-group">
                                     <label for="useremail">Alamat Email</label>
-                                    <input type="email" class="form-control" id="useremail" placeholder="Contoh : email@contoh.com">
+                                    <input type="email" class="form-control" id="useremail" name="email" placeholder="Contoh : email@contoh.com">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="username">Nama Lengkap</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Masukkan nama lengkap">
+                                    <input type="text" class="form-control" id="username" name="full_name" placeholder="Masukkan nama lengkap">
                                 </div>
     
 
                                 <div class="form-group">
                                     <label for="userpassword">Kata Sandi</label>
-                                    <input type="password" class="form-control" id="userpassword" placeholder="Minimal 6 karakter">
+                                    <input type="password" class="form-control" id="userpassword" name="password" placeholder="Minimal 6 karakter">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="userpassword">Ketik Ulang Kata Sandi</label>
-                                    <input type="password" class="form-control" id="userpassword" placeholder="Minimal 6 karakter">
+                                    <input type="password" class="form-control" id="userpassword" name="password2" placeholder="Minimal 6 karakter">
                                 </div>
 
                                 <div class="form-group row">
