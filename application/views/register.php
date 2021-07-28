@@ -17,6 +17,18 @@
         <!-- App Css-->
         <link href="<?= base_url();?>/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+        <script>
+            function check(){
+                var p1 = document.getElementById("userpassword1").value;
+                var p2 = document.getElementById("userpassword2").value;
+                if(p1.length < 7 || p2.length < 7){
+                    alert("Password Minimal 6 Char");
+                    return false;
+                }else{
+                    return true;
+                }
+            }
+        </script>
     </head>
 
     <body class="account-pages">
@@ -70,18 +82,18 @@
 
                                 <div class="form-group">
                                     <label for="username">Nama Lengkap</label>
-                                    <input type="text" class="form-control" id="username" name="full_name" placeholder="Masukkan nama lengkap">
+                                    <input type="text" class="form-control" id="username" name="full_name" placeholder="Masukkan nama lengkap" required>
                                 </div>
     
 
                                 <div class="form-group">
                                     <label for="userpassword">Kata Sandi</label>
-                                    <input type="password" class="form-control" id="userpassword" name="password" placeholder="Minimal 6 karakter">
+                                    <input type="password" class="form-control" id="userpassword1" name="password" placeholder="Minimal 6 karakter" maxlength="6" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="userpassword">Ketik Ulang Kata Sandi</label>
-                                    <input type="password" class="form-control" id="userpassword" name="password2" placeholder="Minimal 6 karakter">
+                                    <input type="password" class="form-control" id="userpassword2" name="password2" onchange="check()" placeholder="Minimal 6 karakter" maxlength="6" required>
                                 </div>
 
                                 <div class="form-group row">

@@ -55,13 +55,13 @@
 
                                 <div class="form-group">
                                     <label for="username">Alamat Email</label>
-                                    <input type="email" class="form-control" id="username" name="email" placeholder="Contoh : email@contoh.com">
+                                    <input type="email" class="form-control" id="username" name="email" placeholder="Contoh : email@contoh.com" required>
                                 </div>
     
 
                                 <div class="form-group">
                                     <label for="userpassword">Kata Sandi</label>
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan kata sandi">
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan kata sandi" required>
                                 </div>
     
                                 <div class="form-group row">

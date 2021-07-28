@@ -51,8 +51,8 @@ class Welcome extends CI_Controller {
 	
 public function proses_register(){
 	if($this->input->post('password') == $this->input->post('password2')){
-		$this->load->model('User_model','foto');
-		$this->foto->proses_registrasi();
+		$this->load->model('User_model','reg');
+		$this->reg->proses_registrasi();
 		$this->session->set_flashdata('success', 'Success Registered!');
 		redirect(base_url('register'));
 	}else{
