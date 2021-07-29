@@ -1,4 +1,6 @@
-   <!-- ============================================================== -->
+
+
+            <!-- ============================================================== -->
             <!-- Start right Content here -->
             <!-- ============================================================== -->
             <div class="main-content">
@@ -7,18 +9,20 @@
                     <div class="container-fluid">
                         
                         <br>
+                        <h4>Pengaturan</h4>
+                        <br>
                         <!-- Menu tab -->
                         <ul class="nav nav-tabs nav-tabs-custom nav-justified" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
                                     <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                                    <span class="d-none d-sm-block"><i class="ti-user mr-2"></i>Kontak</span>    
+                                    <span class="d-none d-sm-block"><i class="ti-user mr-2"></i>Ubah Data Diri</span>    
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#profile" role="tab">
                                     <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
-                                    <span class="d-none d-sm-block"><i class="ti-comments mr-2"></i>Pesan</span>    
+                                    <span class="d-none d-sm-block"><i class="ti-key mr-2"></i>Ubah Kata Sandi</span>    
                                 </a>
                             </li>
                         </ul>  
@@ -28,33 +32,80 @@
                         <div class="tab-content">
                             <div class="tab-pane active p-3" id="home" role="tabpanel">
                                 <div class="row">
-                                    <div class="row col-md-3" style="border-right: 1px solid #e6e6e6; margin-top: 0px; padding-top: 0px;">
-                                        <h4>Kontak</h4>
-                                        <div class="form-group">
-                                            <input class="form-control" type="search" id="example-search-input" placeholder="Cari ...">
-                                        </div>
-                                        <p style="text-align: center;">Tidak ada kontak</p>
+                                    <div class="col-md-3">
+                                        &nbsp;
                                     </div>
-                                    <div class="col-md-9">
-                                        
+                                    <div class="col-md-6">
+                                        <div class="card" style="padding: 10px;">
+                                            <br>
+                                            <h5>Pengaturan Data Diri</h5>
+                                            <br>
+                                            <div class="form-group">
+                                                <label>Nama Lengkap</label>
+                                                <input type="text" class="form-control" required placeholder="Masukkan Nama"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input type="email" class="form-control" required placeholder="Masukkan Email"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>No. Handphone</label>
+                                                <input type="text" class="form-control" required placeholder="Masukkan No. Handphone"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="d-block mb-3">Jenis Kelamin :</label>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline1">Laki - Laki</label>
+                                                </div>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline2">Perempuan</label>
+                                                </div>
+                                            </div>
+                                            <div class="row col-md-6">
+                                                <button type="button" class="btn btn-secondary waves-effect waves-light mr-3" style="float: left;">Batal</button>
+                                                <button type="button" class="btn btn-info waves-effect waves-light" style="float: left;">Simpan</button>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        &nbsp;
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane p-3" id="profile" role="tabpanel">
                                 <div class="row">
-                                    <div class="row col-md-3" style="border-right: 1px solid #e6e6e6; margin-top: 0px; padding-top: 0px;">
-                                        <div class="row col-md-12">
-                                            <h4>Pesan</h4>
-                                        </div>
-                                        <!-- <div class="form-group">
-                                            <input class="form-control" type="search" id="example-search-input" placeholder="Cari ...">
-                                        </div> -->
-                                        <div class="row col-md-12">
-                                            <p>Tidak ada pesan</p>
+                                    <div class="col-md-3">
+                                        &nbsp;
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card" style="padding: 10px;">
+                                            <br>
+                                            <h5>Ubah Kata Sandi</h5>
+                                            <br>
+                                            <div class="form-group">
+                                                <label>Kata Sandi Lama</label>
+                                                <input type="password" class="form-control" required placeholder="Masukkan Sandi Lama"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Kata Sandi Baru</label>
+                                                <input type="password" class="form-control" required placeholder="Masukkan Sandi Baru"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Kata Sandi Baru</label>
+                                                <input type="password" class="form-control" required placeholder="Ulangi Sandi Baru"/>
+                                            </div>
+                                            <div class="row col-md-6">
+                                                <button type="button" class="btn btn-secondary waves-effect waves-light mr-3" style="float: left;">Batal</button>
+                                                <button type="button" class="btn btn-info waves-effect waves-light" style="float: left;">Ubah Kata Sandi</button>
+                                            </div>
+                                            <br>
                                         </div>
                                     </div>
-                                    <div class="col-md-9">
-                                        
+                                    <div class="col-md-3">
+                                        &nbsp;
                                     </div>
                                 </div>
                             </div>

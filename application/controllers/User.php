@@ -65,6 +65,20 @@ class User extends CI_Controller {
       }
   }
 
+
+  public function profile() {
+	$t['info'] = $this->session->userdata('full_name');
+  	if($t['info'] == TRUE){
+	$a['header'] =  $this->load->view('layout/header',null, true);
+	$a['footer'] =  $this->load->view('layout/footer',null, true);
+	$a['content'] =  $this->load->view('profile/content',$t, true);
+	$page = $this->load->view('layout',$a);
+	return $page;
+	}else{
+		redirect(base_url());
+	}
+}
+
   public function logout ()
   {
       $this->session->sess_destroy();

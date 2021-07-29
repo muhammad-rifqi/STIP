@@ -149,7 +149,7 @@
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
                     <!-- item-->
-                    <a class="dropdown-item" href="#"><i
+                    <a class="dropdown-item" href="<?= base_url('user/profile')?>"><i
                             class="mdi mdi-account-circle font-size-17 align-middle mr-1"></i> Profil</a>
                     <a class="dropdown-item" href="#"><i class="mdi mdi-wallet font-size-17 align-middle mr-1"></i> Media Saya</a>
                     <a class="dropdown-item d-block" href="#"><i class="mdi mdi-settings font-size-17 align-middle mr-1"></i> Pengaturan</a>
